@@ -1,3 +1,4 @@
 # Workshop
-
+The Workshop program operating on multi-threading solves the problem of starvation and jamming (the problem of producers and consumers). The graphical interpretation uses JavaFx with the possibility of modifying the program input data.
 # Design assumptions
+A service establishment employs a total of 4 employees. One person takes orders for the repair of X equipment, and three others complete the repairs. The plant can accommodate a maximum of 100 pieces of equipment X. The person accepting the orders notes the addresses of the owners of the equipment they return for repair and attaches them to the accepted copy. Then he puts the equipment back on the shelf. When any of the three "physical" repairers is free, they take the received item, repairs it, wraps it, sticks the recipient's address and sends it to the person ordering the repair. Only then does the element disappear from the records of the repair facility.
