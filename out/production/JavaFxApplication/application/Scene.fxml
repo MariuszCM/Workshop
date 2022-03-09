@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="846.0" prefWidth="1045.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GUIController">
+   <children>
+      <ImageView fitHeight="854.0" fitWidth="1045.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/background.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="shelfSize" layoutX="24.0" layoutY="57.0" prefHeight="32.0" prefWidth="155.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ordersNum" layoutX="212.0" layoutY="57.0" prefHeight="32.0" prefWidth="155.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size of Shelf:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="212.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Orders:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="207.0" fitWidth="176.0" layoutX="247.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/shelf.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="273.0" fitWidth="116.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/receiver.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="12.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All orders: " wrappingWidth="116.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="orderNumber" layoutX="346.0" layoutY="543.0" prefHeight="53.0" prefWidth="105.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="786.0" layoutY="49.0" mnemonicParsing="false" onAction="#startSimulationButtonPressed" prefHeight="53.0" prefWidth="208.0" text="Start Simulation">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="290.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/table.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="224.0" fitWidth="218.0" layoutX="576.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/shelf.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="336.0" fitWidth="230.0" layoutX="767.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/fixer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="692.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="348.0" fitWidth="225.0" layoutX="861.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/fixer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="298.0" fitWidth="231.0" layoutX="644.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/fixer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="receiverBox" fitHeight="95.0" fitWidth="96.0" layoutX="343.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="circle1" fill="#80c69e" layoutX="1021.0" layoutY="383.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="#91d0ac" layoutX="776.0" layoutY="226.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle3" fill="#84c9a1" layoutX="935.0" layoutY="242.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="191.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders on Shelf :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="642.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="594.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="642.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="594.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/box.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ordersOnShelf" layoutX="379.0" layoutY="166.0" prefHeight="41.0" prefWidth="96.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixer1" layoutX="816.0" layoutY="731.0" prefHeight="35.0" prefWidth="238.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixer2" layoutX="558.0" layoutY="539.0" prefHeight="35.0" prefWidth="238.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixer3" layoutX="666.0" layoutY="575.0" prefHeight="35.0" prefWidth="238.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ordersFixed" layoutX="720.0" layoutY="150.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Text layoutX="543.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Orders">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="5.0" layoutY="209.0" mnemonicParsing="false" onAction="#addOrderButtonPressed" prefHeight="102.0" prefWidth="129.0" text="+">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Label fx:id="allOrders" layoutX="32.0" layoutY="151.0" prefHeight="54.0" prefWidth="76.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Text layoutX="51.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I Received Order Number:">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="clientData" layoutX="42.0" layoutY="602.0" prefHeight="41.0" prefWidth="339.0" textFill="#0b00ab">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientData2" layoutX="42.0" layoutY="655.0" prefHeight="41.0" prefWidth="339.0" textFill="#000ea4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="5.0" layoutY="325.0" mnemonicParsing="false" onAction="#subtractOrderButtonPressed" prefHeight="73.0" prefWidth="129.0" text="-">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="139.0" layoutY="209.0" majorTickUnit="1.0" max="10.0" orientation="VERTICAL" prefHeight="231.0" prefWidth="66.0" />
+      <Label fx:id="receiverSliderLabel" layoutX="144.0" layoutY="151.0" prefHeight="53.0" prefWidth="56.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fixerDelayMin" layoutX="427.0" layoutY="43.0" prefHeight="40.0" prefWidth="155.0" />
+      <TextField fx:id="fixerDelayMax" layoutX="427.0" layoutY="103.0" prefHeight="40.0" prefWidth="155.0" />
+      <TextField fx:id="receiverDelayMin" layoutX="598.0" layoutY="43.0" prefHeight="40.0" prefWidth="155.0" />
+      <TextField fx:id="receiverDelayMax" layoutX="598.0" layoutY="103.0" prefHeight="40.0" prefWidth="155.0" />
+      <Text layoutX="448.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixer delay:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="604.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciver delay:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="475.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="647.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
